@@ -1,0 +1,90 @@
+/* components/gameProgress.css */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.game-progress-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	background: linear-gradient(135deg, #0f2342 0%, #1f2937 100%);
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+.game-progress-container:hover {
+	box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+	transform: scale(1.02);
+}
+
+.game-progress-title {
+	color: #4b5563;
+	font-family: "Orbitron", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px #ff4500;
+	margin-bottom: 15px;
+}
+
+.game-progress-list {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: #f9fafb;
+	border: 2px solid #0f2342;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.game-progress-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	color: #1f2937;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.1rem;
+	border-top: 1px solid #0f2342;
+	transition: all 0.3s ease;
+}
+
+.game-progress-item:first-child {
+	border-top: none;
+}
+
+.game-progress-item:hover {
+	background-color: #e5e7eb;
+	box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.game-progress-label {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.game-progress-value {
+	color: #ff4500;
+	font-weight: 700;
+	text-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+.game-progress-loading,
+.game-progress-error {
+	color: #6b7280;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 20px;
+}
+
+.game-progress-error {
+	color: #ff4500;
+	font-weight: 700;
+}

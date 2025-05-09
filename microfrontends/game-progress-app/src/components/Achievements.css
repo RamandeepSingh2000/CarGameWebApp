@@ -1,0 +1,80 @@
+/* components/achievements.css */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.achievements-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	background: linear-gradient(
+		135deg,
+		#0f2342 0%,
+		#1f2937 100%
+	); /* Dark gradient */
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.achievements-title {
+	color: #4b5563; /* Matches AuthForm h3 */
+	font-family: "Orbitron", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px #ff4500; /* Glowing orange effect */
+	margin-bottom: 15px;
+}
+
+.achievements-list {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.achievement-item {
+	background-color: #f9fafb; /* Matches input background */
+	border: 2px solid #0f2342; /* Matches input border */
+	border-radius: 8px;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-item:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(255, 69, 0, 0.5); /* Orange glow on hover */
+	border-color: #ff4500;
+}
+
+.achievement-text {
+	color: #1f2937; /* Matches input text */
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.achievements-loading,
+.achievements-error,
+.achievements-none {
+	color: #6b7280; /* Matches toggle-auth */
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 10px;
+}
+
+.achievements-error {
+	color: #ff4500; /* Orange for errors */
+	font-weight: 700;
+}
+
+.achievements-none:hover {
+	color: #1f2937; /* Matches toggle-auth hover */
+	cursor: default;
+}

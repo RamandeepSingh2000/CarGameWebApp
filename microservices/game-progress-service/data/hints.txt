@@ -1,0 +1,30 @@
+Category: General
+Level: 0
+Content: This is a racing challenge. Use WASD to drive your car and reach the end of each track. Speed, timing, and control will define your success.
+Category: Strategy
+Level: 1
+Content: Drive forward and keep moving—you’ll know when you’ve reached the end.
+Category: Critical Strategy
+Level: 1
+Content: Drive the car until you reach the yellow marker (cube) to win Level 1.
+Category: Strategy
+Level: 2
+Content: The road might twist—adjust your steering accordingly.
+Category: Critical Strategy
+Level: 2
+Content: Stay on the path and drive until you reach the second yellow marker to win Level 2.
+Category: Strategy
+Level: 3
+Content: Only the most focused drivers make it to the final marker.
+Category: Critical Strategy
+Level: 3
+Content: Navigate to the last yellow cube to complete Level 3 and finish the game.
+Category: Achievement
+Level: 1
+Content: Reach the end of Level 1 to earn the "Track Starter" achievement.
+Category: Achievement
+Level: 2
+Content: Finish Level 2 to unlock the "Road Warrior" achievement.
+Category: Achievement
+Level: 3
+Content: Complete Level 3 and end the game to earn the "Champion Racer" achievement.

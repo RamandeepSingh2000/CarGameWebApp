@@ -1,0 +1,107 @@
+/* components/leaderboard.css */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.leaderboard-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	background: linear-gradient(135deg, #0f2342 0%, #1f2937 100%);
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.leaderboard-title {
+	color: #4b5563;
+	font-family: "Orbitron", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px #ff4500;
+	margin-bottom: 20px;
+}
+
+.leaderboard-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #f9fafb;
+	border: 2px solid #0f2342;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.leaderboard-header {
+	background-color: #0f2342;
+	color: #f9fafb;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.leaderboard-row {
+	transition: all 0.3s ease;
+}
+
+.leaderboard-row:hover {
+	background-color: #e5e7eb;
+	transform: scale(1.02);
+	box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+.leaderboard-cell {
+	color: #1f2937;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.1rem;
+	padding: 12px;
+	text-align: center;
+	border-top: 1px solid #0f2342;
+}
+
+/* Special styling for top 3 ranks */
+.leaderboard-row.rank-1 {
+	background-color: #ffd700; /* Gold */
+	color: #1f2937;
+	font-weight: 700;
+	text-shadow: 0 0 5px #ffffff;
+}
+
+.leaderboard-row.rank-2 {
+	background-color: #5f9797; /* Silver */
+	color: #1f2937;
+	font-weight: 700;
+}
+
+.leaderboard-row.rank-3 {
+	background-color: #cd7f32; /* Bronze */
+	color: #1f2937;
+	font-weight: 700;
+}
+
+.leaderboard-row.rank-1:hover,
+.leaderboard-row.rank-2:hover,
+.leaderboard-row.rank-3:hover {
+	box-shadow: 0 0 15px #ff4500;
+}
+
+.leaderboard-loading,
+.leaderboard-error {
+	color: #6b7280;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 20px;
+}
+
+.leaderboard-error {
+	color: #ff4500;
+	font-weight: 700;
+}
