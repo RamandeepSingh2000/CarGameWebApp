@@ -67,7 +67,7 @@ A modern 3D car racing game built with Babylon.js for immersive gameplay, featur
 # Create a .env file in microservices/auth-service
 SERVICE_MONGO_URI='Mongo db url here'
 JWT_SECRET='your_jwt_secret_here'
-
+```
 
 ```bash
 # In a terminal, from root folder
@@ -78,11 +78,12 @@ npm run dev
 
 #### 3. Running Game-Progress Service
 
-
+```bash
 # Create a .env file in microservices/game-progress-service
 SERVICE_MONGO_URI='Mongo db url here'
 GEMINI_API_KEY='api key here'
 Google_API_KEY='api key here'
+```
 
 ```bash
 # In a terminal, from root folder
